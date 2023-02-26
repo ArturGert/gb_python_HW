@@ -3,10 +3,11 @@
 
 # Запрашиваем ввод и вводим два числа
 
-x = int(input("Введите чило X :"))
-y = int(input("Введите чило Y :"))
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
-            print (i,j)
-
+s = int(input("Введите значение X + Y : ")) # первая подсказка
+p = int(input("Введите значение  X * Y : ")) # вторая подсказка
+for x in range(1000):
+    for y in range(1000):
+        if s == x + y and p == x * y:
+            print (x,y, sep=",")
+        
+        
