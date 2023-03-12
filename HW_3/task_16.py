@@ -16,11 +16,13 @@ while len(a) < n:
     a += list(map(int, input().split()))
 
 print(a)
+5
 
 count = 0
 x = int(input("X = "))
-for i in range(n):
-    if a[i] == x:
+for i in a:
+    if i == x:
         count +=1
 
 print(count if count>0 else "Указанное число в массиве А[] отсутствует")
+
