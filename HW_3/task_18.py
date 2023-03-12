@@ -16,6 +16,6 @@ print(a)
 x = int(input("Введите значение X:"))
 c = a[0]
 for i in range(1, n):
-    if (a[i] - x) < (c - x):
+    if abs(a[i] - x) < abs(c - x):
         c = a[i]
 print("Искомы элемент: ",c)
