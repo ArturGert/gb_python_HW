@@ -11,4 +11,4 @@ def mult(x, y):
     return result
 a = int(input("Введите число A: "))
 b = int(input("Введите число B: "))
-print (mult(a, b))
+print (f"{a} в степени {b} равно: {mult(a, b)}")
